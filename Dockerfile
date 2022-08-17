@@ -3,7 +3,7 @@ RUN apk add curl jq
 
 
 #workspace
-WORKDIR /usr/share/udemy
+WORKDIR /usr/share/myFolder
 
 ADD target/selenium-docker.jar selenium-docker.jar
 ADD target/selenium-docker-tests.jar selenium-docker-tests.jar
