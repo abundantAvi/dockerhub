@@ -58,8 +58,8 @@ public class Boxture_SalesOrder extends BaseTest {
         createPage.product(product);
         createPage.createSales();
         Thread.sleep(5000);
-        createPage.orderNum();
-        String orderNum = createPage.orderNum();
+        createPage.orderNumGenerated();
+        String orderNum = createPage.orderNumGenerated();
         System.out.println(orderNum);
         createPage.confirmOrderClick();
         createPage.pickOnClick();
@@ -67,6 +67,7 @@ public class Boxture_SalesOrder extends BaseTest {
         createPage.mobileWebsite();
         createPage.scanTote(tote);
         createPage.pickAfterScan();
+
     }
 
 }

@@ -104,7 +104,7 @@ public class Boxture_Sales {
         this.createButton.click();
     }
 
-    public String orderNum() throws InterruptedException {
+    public String orderNumGenerated() {
 //        SearchContext shadow = this.orderNum.getShadowRoot();
 //        WebElement a = shadow.findElement(By.cssSelector("span"));
 //        String k = a.getText().substring(1);
