@@ -25,7 +25,7 @@ public class BaseTest {
     private Properties prop;
 
     @BeforeTest
-    public void setupDriver(ITestContext ctx, String testCaseName)throws IOException{
+    public void setupDriver(ITestContext ctx)throws IOException{
 
 //BROWSER=>chrome/firefox
 //HUB_HOST=>localhost/10.0.1.3/hostname
@@ -61,8 +61,8 @@ public class BaseTest {
 
         TakesScreenshot ts=(TakesScreenshot)driver;
         File source=ts.getScreenshotAs(OutputType.FILE);
-        String destinationFile=System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
-        FileUtils.copyFile(source,new File(destinationFile));
+        //String destinationFile=System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
+        //FileUtils.copyFile(source,new File(destinationFile));
     }
 
 
