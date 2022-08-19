@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestContext;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import java.io.File;
@@ -66,7 +67,7 @@ public class BaseTest {
     }
 
 
-//    @AfterTest
+    @AfterTest
     public void quitBrowser() {
         this.driver.quit();
     }
