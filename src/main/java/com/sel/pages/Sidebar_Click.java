@@ -2,6 +2,7 @@ package com.sel.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -31,6 +32,10 @@ public class Sidebar_Click {
     public void order_click() {
         this.wait.until(ExpectedConditions.visibilityOf(this.orderButton));
         orderButton.click();
+    }
+    public void order_double_click() {
+        Actions act = new Actions(driver);
+        act.doubleClick(orderButton).perform();
     }
 
     public void create_Order() {

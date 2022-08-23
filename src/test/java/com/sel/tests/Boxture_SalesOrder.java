@@ -67,6 +67,14 @@ public class Boxture_SalesOrder extends BaseTest {
         createPage.mobileWebsite();
         createPage.scanTote(tote);
         createPage.pickAfterScan();
+        Thread.sleep(3000);
+        this.driver.get("https://oms.staging.boxture.com/");
+        Sidebar_Click sidebarclick = new Sidebar_Click(driver);
+        sidebarclick.order_double_click();
+        System.out.println(orderNum);
+        createPage.order1(orderNum);
+        createPage.orderClick();
+        createPage.cancelTheOrder();
 
     }
 
