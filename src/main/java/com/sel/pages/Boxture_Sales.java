@@ -178,7 +178,7 @@ private WebElement orderFieldClick;
 
 
     }
-    public void pickListClick() throws InterruptedException {
+    public String pickListClick() throws InterruptedException {
         Thread.sleep(5000);
 
         this.wait.until(ExpectedConditions.visibilityOf(this.processing));
@@ -195,10 +195,12 @@ private WebElement orderFieldClick;
         this.assign.click();
         Thread.sleep(3000);
         this.user.sendKeys("av");
+
+        this.assignFinalClick.click();
+
         String a = user.getText();
         Thread.sleep(3000);
-        System.out.println("Assigned Picker "+ a);
-        this.assignFinalClick.click();
+        return a;
     }
 
     public void mobileWebsite() throws InterruptedException {
