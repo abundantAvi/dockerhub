@@ -257,6 +257,5 @@ private WebElement orderFieldClick;
         Thread.sleep(2000);
         this.wait.until(ExpectedConditions.visibilityOf(this.buttonCancel));
         this.buttonCancel.click();
-        System.out.println("Order"+ orderNum+ "Cancelled");
     }
 }
