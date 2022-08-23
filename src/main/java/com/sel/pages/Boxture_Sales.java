@@ -158,6 +158,7 @@ public class Boxture_Sales {
                         System.out.println("inside processing");
                         Actions act = new Actions(driver);
                         act.moveToElement(mouseHover).perform();
+                        Thread.sleep(3000);
                         this.pickClick.click();
                         Thread.sleep(5000);
                         break;
