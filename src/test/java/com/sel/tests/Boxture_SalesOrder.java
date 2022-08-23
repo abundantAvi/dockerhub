@@ -64,8 +64,6 @@ public class Boxture_SalesOrder extends BaseTest {
         createPage.confirmOrderClick();
         createPage.pickOnClick();
         createPage.pickListClick();
-        String picker = createPage.orderNumGenerated();
-        System.out.println(picker);
         createPage.mobileWebsite();
         createPage.scanTote(tote);
         createPage.pickAfterScan();

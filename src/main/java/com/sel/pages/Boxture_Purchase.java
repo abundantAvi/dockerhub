@@ -89,7 +89,6 @@ public class Boxture_Purchase {
             this.driver.navigate().refresh();
             Thread.sleep(3000);
             this.driver.navigate().refresh();
-            System.out.println("refreshed");
             Actions act = new Actions(driver);
             act.moveToElement(mouseHover).perform();
             Thread.sleep(3000);
@@ -145,15 +144,13 @@ public class Boxture_Purchase {
         this.packingMaterial.click();
         this.packingMaterial.clear();
         this.packingMaterial.sendKeys(box);
-        System.out.println("Box 1 - Packing Material");
         Thread.sleep(2000);
         this.product.click();
         this.product.clear();
         this.product.sendKeys(prod);
-        System.out.println("Box 1 - Prod");
         Thread.sleep(2000);
         this.finalReceive.click();
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         this.driver.navigate().refresh();
         this.wait.until(ExpectedConditions.visibilityOf(this.status));
 

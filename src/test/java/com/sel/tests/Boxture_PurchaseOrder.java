@@ -57,8 +57,6 @@ public class Boxture_PurchaseOrder extends BaseTest {
         Thread.sleep(2000);
         this.driver.navigate().refresh();
         clickOnPurchaseOrder.receive("box 1", "BXT-SNXX29999270");
-        System.out.println("Purchase Completed"+ orderNum);
-
 
     }
 
