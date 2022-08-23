@@ -156,6 +156,7 @@ public class Boxture_Purchase {
         Thread.sleep(5000);
         this.driver.navigate().refresh();
         this.wait.until(ExpectedConditions.visibilityOf(this.status));
+        System.out.println("Purchase Completed");
 
     }
 
