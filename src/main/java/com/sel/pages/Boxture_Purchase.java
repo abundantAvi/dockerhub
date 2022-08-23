@@ -84,6 +84,7 @@ public class Boxture_Purchase {
         Thread.sleep(6000);
 
         if (pending.isEnabled()) {
+
             System.out.println("inside pending");
             Actions act = new Actions(driver);
             act.moveToElement(mouseHover).perform();
@@ -93,6 +94,9 @@ public class Boxture_Purchase {
 
         if (confirming.isEnabled()) {
             System.out.println("inside confirming");
+            this.driver.navigate().refresh();
+            Thread.sleep(3000);
+            this.driver.navigate().refresh();
             Actions act = new Actions(driver);
             act.moveToElement(mouseHover).perform();
             Thread.sleep(3000);
