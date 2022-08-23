@@ -86,6 +86,9 @@ public class Boxture_Purchase {
         if (pending.isEnabled()) {
 
             System.out.println("inside pending");
+            this.driver.navigate().refresh();
+            Thread.sleep(3000);
+            this.driver.navigate().refresh();
             Actions act = new Actions(driver);
             act.moveToElement(mouseHover).perform();
             Thread.sleep(3000);
