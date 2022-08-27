@@ -40,6 +40,7 @@ public class Boxture_InventoryAdjust extends BaseTest {
         inventory.product("Auto Test 123");
         inventory.quantity("1");
         inventory.adjustFinal();
+        System.out.println("1 quantity adjusted for the product 'Auto Test 123' with Pickable Location 'AVITESTBIN123' ");
     }
 
 }
