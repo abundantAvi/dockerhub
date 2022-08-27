@@ -59,8 +59,6 @@ public class Boxture_PurchaseOrder extends BaseTest {
         clickOnPurchaseOrder.receive("box 1", "Auto Test 123");
         System.out.println("Purchase Completed for ORDER    "+ orderNum);
 
-
     }
-
 
 }
