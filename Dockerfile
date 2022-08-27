@@ -10,6 +10,7 @@ ADD target/selenium-docker-tests.jar selenium-docker-tests.jar
 ADD target/libs libs
 ADD sales.xml sales.xml
 ADD purchase.xml purchase.xml
+ADD inventory.xml inventory.xml
 
 
 ADD healthcheck.sh healthcheck.sh
