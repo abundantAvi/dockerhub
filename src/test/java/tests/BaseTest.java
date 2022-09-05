@@ -40,8 +40,6 @@ public class BaseTest {
 //properties.load(inputstream);
         String browserName=System.getProperty("BROWSER");
         String host=System.getProperty("HUB_HOST");
-
-
         if(browserName!=null&&
                 browserName.equalsIgnoreCase("firefox")){
             System.out.println("firefoxloading...");
