@@ -71,7 +71,7 @@ public class Boxture_SalesOrder extends BaseTest {
         this.driver.get("https://oms.staging.boxture.com/");
         Sidebar_Click sidebarclick = new Sidebar_Click(driver);
         sidebarclick.order_double_click();
-        System.out.println(orderNum);
+        System.out.println("Order Number " + orderNum);
         createPage.order1(orderNum);
         createPage.orderClick();
         createPage.cancelTheOrder("Auto Test 123","613");
