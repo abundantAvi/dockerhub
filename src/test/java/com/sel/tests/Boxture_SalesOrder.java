@@ -74,7 +74,7 @@ public class Boxture_SalesOrder extends BaseTest {
         System.out.println(orderNum);
         createPage.order1(orderNum);
         createPage.orderClick();
-        createPage.cancelTheOrder();
+        createPage.cancelTheOrder("Auto Test 123","613");
         System.out.println("Order  "+ orderNum+ "  Cancelled  ");
 
 
