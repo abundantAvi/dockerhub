@@ -11,6 +11,7 @@ ADD target/libs libs
 ADD sales.xml sales.xml
 ADD purchase.xml purchase.xml
 ADD inventory.xml inventory.xml
+ADD containers.xml containers.xml
 
 
 ADD healthcheck.sh healthcheck.sh
