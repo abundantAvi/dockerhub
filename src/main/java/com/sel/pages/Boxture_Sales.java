@@ -274,6 +274,7 @@ private WebElement orderFieldClick;
         Thread.sleep(2000);
         this.wait.until(ExpectedConditions.visibilityOf(this.ellipsis));
         this.ellipsis.click();
+        Thread.sleep(2000);
         this.wait.until(ExpectedConditions.visibilityOf(this.cancelOrder));
         this.cancelOrder.click();
         Thread.sleep(2000);
