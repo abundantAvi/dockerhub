@@ -268,15 +268,20 @@ private WebElement orderFieldClick;
         this.wait.until(ExpectedConditions.visibilityOf(this.productInput));
         this.productInput.sendKeys(product);
         Thread.sleep(4000);
-
         this.wait.until(ExpectedConditions.visibilityOf(this.unpickButton));
         this.unpickButton.click();
+        System.out.println("unpicked order");
+
         Thread.sleep(2000);
         this.wait.until(ExpectedConditions.visibilityOf(this.ellipsis));
         this.ellipsis.click();
+        System.out.println("ellipsis clicked");
+
         Thread.sleep(2000);
         this.wait.until(ExpectedConditions.visibilityOf(this.cancelOrder));
         this.cancelOrder.click();
+        System.out.println("cancel the order");
+
         Thread.sleep(2000);
         this.wait.until(ExpectedConditions.visibilityOf(this.buttonCancel));
         this.buttonCancel.click();
