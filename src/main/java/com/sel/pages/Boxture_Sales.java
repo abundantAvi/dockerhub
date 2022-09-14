@@ -145,7 +145,7 @@ private WebElement orderFieldClick;
 
         for (int i = 0; i <= 4; i++) {
             if (confirming.isEnabled()) {
-                for (int k = 0; k < 3; k++) {
+                for (int k = 0; k < 1; k++) {
                     this.driver.navigate().refresh();
                     Thread.sleep(5000);
                     System.out.println("inside confirming");
@@ -270,17 +270,12 @@ private WebElement orderFieldClick;
         Thread.sleep(4000);
         this.wait.until(ExpectedConditions.visibilityOf(this.unpickButton));
         this.unpickButton.click();
-        System.out.println("unpicked order");
-
-        Thread.sleep(2000);
+        this.driver.navigate().refresh();
         this.wait.until(ExpectedConditions.visibilityOf(this.ellipsis));
         this.ellipsis.click();
-        System.out.println("ellipsis clicked");
-
         Thread.sleep(2000);
         this.wait.until(ExpectedConditions.visibilityOf(this.cancelOrder));
         this.cancelOrder.click();
-        System.out.println("cancel the order");
 
         Thread.sleep(2000);
         this.wait.until(ExpectedConditions.visibilityOf(this.buttonCancel));
