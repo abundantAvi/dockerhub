@@ -271,6 +271,7 @@ private WebElement orderFieldClick;
         this.wait.until(ExpectedConditions.visibilityOf(this.unpickButton));
         this.unpickButton.click();
         System.out.println("unpicked order");
+        this.driver.navigate().refresh();
 
         Thread.sleep(2000);
         this.wait.until(ExpectedConditions.visibilityOf(this.ellipsis));
