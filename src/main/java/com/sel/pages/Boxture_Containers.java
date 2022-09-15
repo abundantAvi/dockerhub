@@ -15,7 +15,7 @@ public class Boxture_Containers {
     private WebElement containers;
     @FindBy(linkText = "Create")
     private WebElement create;
-    @FindBy(xpath = "//input[@placeholder='Packing materialabc']")
+    @FindBy(xpath = "//input[@placeholder='Packing material']")
     private WebElement packingMaterial;
     @FindBy(xpath = "//input[@placeholder='Bin location']")
     private WebElement binLoc;
