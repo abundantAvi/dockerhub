@@ -90,6 +90,8 @@ public class Boxture_Purchase {
             Thread.sleep(3000);
             this.driver.navigate().refresh();
             System.out.println("refreshed");
+            this.driver.navigate().refresh();
+            this.driver.navigate().refresh();
             Actions act = new Actions(driver);
             act.moveToElement(mouseHover).perform();
             Thread.sleep(3000);
