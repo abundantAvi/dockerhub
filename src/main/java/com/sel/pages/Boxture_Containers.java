@@ -28,6 +28,9 @@ public class Boxture_Containers {
     @FindBy(css = ".py-1:nth-child(1) p")
     private WebElement a;
 
+    @FindBy(css = ".h-8 > .w-6:nth-child(1)")
+    private WebElement clickOnNotification;
+
     @FindBy(xpath = "//main/div/div/div/div/div/div/div[2]/h3/satis-copyable")
     private WebElement containerNum;
 
