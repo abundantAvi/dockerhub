@@ -39,7 +39,7 @@ public class Boxture_ShipmentPageVerification extends BaseTest {
         shipment.getShipmentPage();
         shipment.getshipmentNum();
         shipmentNum = shipment.getshipmentNum();
-        System.out.println("Shipment Num "+ shipmentNum + "verified & SHIPMENT PAGE working succeessfully");
+        System.out.println("Shipment Num "+ shipmentNum + "  verified & SHIPMENT PAGE working succeessfully");
 
     }
 
