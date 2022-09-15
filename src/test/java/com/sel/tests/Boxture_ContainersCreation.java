@@ -42,6 +42,7 @@ public class Boxture_ContainersCreation extends BaseTest {
         containers.setPackingMaterial("box 1");
         containers.setBinLoc("AVITESTBIN123");
         containers.setCreateContainer();
+        containers.setclickOnNotification();
         containers.setNotificationCntainer();
         containerNumber = containers.setNotificationCntainer();
         System.out.println(containerNumber);

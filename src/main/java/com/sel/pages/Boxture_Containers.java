@@ -25,7 +25,7 @@ public class Boxture_Containers {
 
     @FindBy(xpath = "//span[normalize-space()='View notifications']")
     private WebElement notificationCntainer;
-    @FindBy(css = ".pnotify-text")
+    @FindBy(css = ".py-1:nth-child(1) p")
     private WebElement a;
 
     @FindBy(xpath = "//main/div/div/div/div/div/div/div[2]/h3/satis-copyable")
@@ -65,6 +65,10 @@ public class Boxture_Containers {
 
     public void setCreateContainer() throws InterruptedException {
         createContainer.click();
+        Thread.sleep(3000);
+    }
+    public void setclickOnNotification() throws InterruptedException {
+        clickOnNotification.click();
         Thread.sleep(3000);
     }
 
