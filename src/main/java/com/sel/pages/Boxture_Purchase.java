@@ -101,6 +101,8 @@ public class Boxture_Purchase {
         if (confirming.isEnabled()) {
             System.out.println("inside confirming");
             this.driver.navigate().refresh();
+            this.driver.navigate().refresh();
+            this.driver.navigate().refresh();
             Thread.sleep(3000);
             this.driver.navigate().refresh();
             Actions act = new Actions(driver);
