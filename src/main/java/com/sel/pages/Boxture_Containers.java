@@ -28,8 +28,8 @@ public class Boxture_Containers {
     @FindBy(css = ".py-1:nth-child(1) p")
     private WebElement a;
 
-    @FindBy(css = ".h-8 > .w-6:nth-child(1)")
-    private WebElement clickOnNotification;
+    @FindBy(css = "signum-notification-body")
+    private WebElement signumClickOnNotification;
 
     @FindBy(xpath = "//main/div/div/div/div/div/div/div[2]/h3/satis-copyable")
     private WebElement containerNum;
@@ -73,7 +73,7 @@ public class Boxture_Containers {
         Thread.sleep(3000);
     }
     public void setclickOnNotification() throws InterruptedException {
-        clickOnNotification.click();
+        signumClickOnNotification.click();
         Thread.sleep(3000);
     }
 
