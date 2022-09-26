@@ -45,9 +45,11 @@ public class Boxture_Containers {
         wait.until(ExpectedConditions.visibilityOf(this.containers));
         containers.click();
     }
-    public void setCreate() {
+    public void setCreate() throws InterruptedException {
         wait.until(ExpectedConditions.visibilityOf(this.create));
         create.click();
+        Thread.sleep(2000);
+
     }
     public void setPackingMaterial(String packing_Material) throws InterruptedException {
 
