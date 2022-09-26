@@ -96,6 +96,8 @@ public class Boxture_Purchase {
             act.moveToElement(mouseHover).perform();
             Thread.sleep(3000);
             this.receiveClick.click();
+            Thread.sleep(5000);
+
         }else{
 
         if (confirming.isEnabled()) {
@@ -157,8 +159,6 @@ public class Boxture_Purchase {
         System.out.println("Box 1 - Prod");
         Thread.sleep(2000);
         this.finalReceive.click();
-        Thread.sleep(5000);
-        this.driver.navigate().refresh();
         this.wait.until(ExpectedConditions.visibilityOf(this.status));
         System.out.println("Purchase Completed");
 
