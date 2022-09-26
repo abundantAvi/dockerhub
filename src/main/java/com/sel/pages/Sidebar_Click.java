@@ -12,7 +12,7 @@ public class Sidebar_Click {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    @FindBy(css = ".flex-grow > .flex-1 > .sts-sidebar-menu-item:nth-child(2) > .sts-sidebar-menu-item__link > .sts-sidebar-menu-item__label")
+    @FindBy(linkText = "Orders")
     private WebElement orderButton;
     @FindBy(linkText = "Create")
     private WebElement createOrder;
