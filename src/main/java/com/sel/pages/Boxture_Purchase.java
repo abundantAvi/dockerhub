@@ -159,6 +159,7 @@ public class Boxture_Purchase {
         System.out.println("Box 1 - Prod");
         Thread.sleep(2000);
         this.finalReceive.click();
+        Thread.sleep(3000);
         this.driver.navigate().refresh();
         this.wait.until(ExpectedConditions.visibilityOf(this.status));
         System.out.println("Purchase Completed");
