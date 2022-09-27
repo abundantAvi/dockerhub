@@ -78,7 +78,8 @@ public class Boxture_Containers {
     }
 
     public String setNotificationCntainer() throws InterruptedException {
-        String b = a.getText().substring(10,18);
+        String b = a.getText();
+//        String b = a.getText().substring(10,18);
         return b;
     }
 }
